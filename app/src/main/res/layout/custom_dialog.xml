@@ -1,5 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
     android:orientation="vertical"
     android:layout_width="match_parent"
     android:layout_height="wrap_content"
@@ -11,7 +12,7 @@
         android:id="@+id/a"
         android:gravity="center"
         android:background="#DA5F6A"
-        android:src="@drawable/close_icon"
+        android:src="@drawable/ic_close_24"
         android:scaleType="fitCenter" />
 
     <TextView
@@ -30,15 +31,16 @@
         android:gravity="center_horizontal" />
 
     <Button
-        android:layout_width="wrap_content"
-        android:layout_height="30dp"
-        android:text="OK"
         android:id="@+id/btn_dialog"
-        android:gravity="center_vertical|center_horizontal"
+        android:layout_width="wrap_content"
+        android:layout_height="48dp"
         android:layout_below="@+id/text_dialog"
+        android:layout_centerHorizontal="true"
         android:layout_marginBottom="20dp"
         android:background="#DA5F6A"
-        android:layout_centerHorizontal="true"
-        android:textColor="#ffffffff" />
+        android:gravity="center_vertical|center_horizontal"
+        android:text="OK"
+        android:textColor="#ffffffff"
+        tools:ignore="TextContrastCheck" />
 
 </RelativeLayout>
